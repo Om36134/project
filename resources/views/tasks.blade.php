@@ -1,7 +1,10 @@
 @extends('layouts.app')
 @section('content')
+
+    <a href="/index">перейти сайт лодки</a>
     <div class="card-body">
         @include('errors')
+
         <form action="{{ url('task') }}" method='POST' class="form-horizontal" style="margin: 5rem 5rem;">
             {{ csrf_field() }}
 
@@ -72,5 +75,8 @@
         </div>
     @endif
 @endsection
+
+
+
 
 

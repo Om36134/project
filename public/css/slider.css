@@ -1,0 +1,106 @@
+/*font-family: 'Playfair Display', serif;*/
+/*font-family: 'Playfair Display', serif;*/
+/*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'League-Spartan-Regular', sans-serif;*/
+
+.slide-wrapper {
+    position: relative;
+}
+
+.slide-item {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.slide-item-img {
+    width: 1016px;
+    height: 570px;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-box-shadow: -16px 25px 65px rgba(11, 12, 17, 0.2);
+    -moz-box-shadow: -16px 25px 65px  rgba(11, 12, 17, 0.2);
+    box-shadow: -16px 25px 65px  rgba(11, 12, 17, 0.2);
+}
+
+.slide-item-img--bg-1 {
+    background-image: url("../img/img/img-header.jpg");
+}
+
+.slide-item-desc {
+    width: 500px;
+    /*height: 200px;*/
+    /*background: #1b4b72;*/
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slide-item-heading {
+    color: #0b0c11;
+    font-family: 'Playfair Display', serif;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 64px;
+    margin-bottom: 14px;
+}
+
+.slide-item-heading span {
+    color: rgba(93, 168, 239, 0.9);
+    font-family: 'League-Spartan-Regular', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 5.4px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.slide-item-text {
+    width: 390px;
+    color: rgba(8, 8, 17, 0.83);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+}
+
+.slides-controls {
+    position: absolute;
+    width: 81px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.slides-controls-left {
+
+}
+
+.slides-controls-right{}
+
+.slides-controls-number {
+    font-family: 'League-Spartan-Regular', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 4px;
+    color: #ebebeb;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.slides-controls-number__active {
+    color: #5da8ef;
+}
+
+.slides-controls-number__total {
+    color: #262626;
+
+}

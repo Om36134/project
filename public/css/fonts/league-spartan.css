@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'League-Spartan-Regular';
+    src:url('League-Spartan-Regular.ttf.woff') format('woff'),
+    url('League-Spartan-Regular.ttf.svg#League-Spartan-Regular') format('svg'),
+    url('League-Spartan-Regular.ttf.eot'),
+    url('League-Spartan-Regular.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: 700;
+    font-style: normal;
+}
