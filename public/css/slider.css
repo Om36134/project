@@ -78,10 +78,7 @@
 
 }
 
-
-.slides-controls-left {
-
-}
+.slides-controls-left {}
 
 .slides-controls-right{}
 
@@ -102,5 +99,6 @@
 
 .slides-controls-number__total {
     color: #262626;
-
 }
+
+
