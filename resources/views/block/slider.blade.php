@@ -39,22 +39,25 @@
 
     </div>
 
-    <div class="site-desc">
-        <div class="site-desc__content">First&nbsp;Surfing&nbsp;Magazine</div>
-    </div>
 
-    <div class="header-social">
-            <a href="#" class="header-social__item">
+
+    <div class="header-social-wrapper">
+
+        <div class="social social--vertical">
+
+            <a href="#" class="social__item">
                 <img src="img/socials/social-tumblr.svg" alt="">
             </a>
 
-            <a href="#" class="header-social__item">
+            <a href="#" class="social__item">
                 <img src="img/socials/social-twitter.svg" alt="">
             </a>
 
-            <a href="#" class="header-social__item">
+            <a href="#" class="social__item">
                 <img src="img/socials/social-vimeo.svg" alt="">
             </a>
+        </div>
+
     </div>
 
 </div>

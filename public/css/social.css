@@ -1,0 +1,38 @@
+/*font-family: 'Playfair Display', serif;*/
+/*font-family: 'Playfair Display', serif;*/
+/*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'League-Spartan-Regular', sans-serif;*/
+
+
+
+
+.social {
+    display: flex;
+    justify-content: center;
+
+}
+
+.social--vertical {
+    flex-direction: column;
+    width: 20px;
+    align-items: center;
+}
+
+.social__item {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.social--vertical .social__item {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 35px;
+}
+
+.social--vertical .social__item:last-child {
+    margin-bottom: 0px;
+}
+
+.header-social-wrapper
+

@@ -5,21 +5,8 @@
 /*font-family: 'League-Spartan-Regular', sans-serif;*/
 
 
-body {
-    background-image: url("../img/bg/bg-lines.png");
-    background-repeat: repeat-y;
-    background-position: center;
-    background-size: initial;
-    font-family: sans-serif;
-}
 
-.container {
-    width: 1224px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.logo {
+.nav-logo-wrapper {
     margin-right: 190px;
 }
 
@@ -89,26 +76,6 @@ body {
     transform-origin: left top;
 }
 
-.header-social {
-    width: 20px;
-    height: 150px;
-    position: absolute;
-    right: -45px;
-    bottom: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.header-social__item {
-    margin-bottom: 34px;
-}
-
-.header-social__item:last-child {
-    margin-bottom: 0px;
-}
-
 .quote {
     padding-top: 95px;
     padding-bottom: 110px;
@@ -150,4 +117,27 @@ body {
     line-height: 66px;
     text-transform: uppercase;
     letter-spacing: 5.4px;
+}
+
+.header-social-wrapper {
+    width: 20px;
+    position: absolute;
+    right: -45px;
+    bottom: 0;
+}
+
+@media (max-width: 1440px) {
+    .header-social-wrapper {
+        right: 30px;
+        bottom: 30px;
+    }
+
+    .site-desc {
+        right: 30px;
+        top: 170px;
+    }
+
+    .site-desc__content {
+        color: #ffffff;
+    }
 }

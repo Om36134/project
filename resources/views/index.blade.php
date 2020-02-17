@@ -12,8 +12,16 @@
     <link rel="stylesheet" href="/css/club-description.css">
     <link rel="stylesheet" href="/css/bass.css">
     <link rel="stylesheet" href="/css/shop.css">
+    <link rel="stylesheet" href="/css/article-01.css">
+    <link rel="stylesheet" href="/css/subscribe.css">
+    <link rel="stylesheet" href="/css/camp.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/social.css">
     <link rel="stylesheet" href="/css/leaguespartan.css">
     <link rel="stylesheet" href="/css/fonts/league-spartan.css">
+
+
+
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Poppins:300&display=swap"
           rel="stylesheet">
@@ -176,6 +184,13 @@
         </div>
     </div>
 </section>
+
+@include('block.article-01')
+@include('block.article-02')
+@include('block.subscribe')
+@include('block.camp')
+@include('block.footer')
+
 
 
 <!-- Latest compiled and minified JavaScript -->
