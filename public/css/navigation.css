@@ -7,25 +7,73 @@
 
 
 .nav-logo-wrapper {
-    margin-right: 190px;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 1254px){
+    .nav-logo-wrapper {
+        margin-right: 190px;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: auto;
+    }
 }
 
 .navigation {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
     list-style-type: none;
+    font-family: 'League-Spartan-Regular', sans-serif;
+    font-weight: 700;
     margin: 0;
-    padding: 0
+    padding: 0;
 
 }
 
+@media (min-width: 768px){
+.navigation {
+    flex-direction: row;
+    justify-content: center;
+}
+}
+
+@media (min-width: 1254px){
+    .navigation {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: auto;
+    }
+}
+
+
 .navigation-item {
-    margin-right: 40px;
+    text-align: center;
+    margin-bottom: 15px;
 
 }
 
 .navigation-item:last-child {
-    margin-right: 0px;
+    margin-bottom: 0px;
+
+}
+
+@media (min-width: 768px){
+    .navigation-item {
+        margin-right: 40px;
+        margin-bottom: 0px;
+
+    }
+
+    .navigation-item:last-child {
+        margin-right: 0px;
+
+    }
 
 }
 
@@ -43,25 +91,47 @@
 
 .navigation-wrapper {
     display: flex;
-    flex-direction: row;
-    height: 128px;
+    flex-direction: column;
     align-items: center;
 }
 
-.header {
-    position: relative;
-    margin-bottom: 95px;
+@media (min-width: 1254px){
+    .navigation-wrapper {
+        flex-direction: row;
+        height: 128px;
+        align-items: center;
+    }
 }
 
 .site-desc {
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    right: -50px;
-    top: 58px;
+    width: auto;
+    display: block;
+    position: static;
+}
+
+@media (min-width: 1254px){
+    .site-desc {
+        width: 12px;
+        height: 12px;
+        right: 30px;
+        top: 170px;
+        position: absolute;
+        z-index: 9;
+
+    }
+}
+
+@media (min-width: 1400px) {
+    .site-desc {
+        right: -50px;
+        top: 58px;
+    }
+
 }
 
 .site-desc__content {
+    position: static;
+    margin-bottom: 20px;
     color: rgba(11, 12, 17, 0.2);
     font-family: 'League-Spartan-Regular', sans-serif;
     font-size: 9px;
@@ -69,44 +139,92 @@
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: 5.4px;
-    position: absolute;
-    transform: rotate(-90deg) translate(-100%,0);
-    left: 0;
-    top: 0;
-    transform-origin: left top;
+
+}
+
+@media (min-width: 1254px){
+    .site-desc__content {
+        color: #ffffff;
+        position: absolute;
+        transform: rotate(-90deg) translate(-100%,0);
+        left: 0;
+        top: 0;
+        transform-origin: left top;
+    }
+}
+
+@media (min-width: 1400px){
+    .site-desc__content {
+        color: rgba(11, 12, 17, 0.2);
+    }
 }
 
 .quote {
-    padding-top: 95px;
-    padding-bottom: 110px;
+    padding-top: 47px;
+    padding-bottom: 55px;
+
+    /*padding-top: 95px;*/
+    /*padding-bottom: 110px;*/
+}
+
+@media (min-width: 992px) {
+    .quote {
+        padding-top: 95px;
+        padding-bottom: 110px;
+    }
+
 }
 
 .quote-wrapper {
-    width: 610px;
+    width: 100%;
+    padding: 0 15px;
     margin: 0 auto;
     text-align: center;
     position: relative;
 }
 
+
+@media (min-width: 640px) {
+    .quote-wrapper {
+        width: 610px;
+        padding: 0;
+    }
+}
+
 .quote-wrapper:after {
     content: "";
     width: 2px;
-    height: 100px;
+    height: 50px;
     background-color: #5da8ef;
     position: absolute;
-    bottom: -58px;
+    bottom: -29px;
     left: 50%;
     transform: translate(-50%,100%);
+}
+
+@media (min-width: 992px) {
+    .quote-wrapper:after {
+        height: 100px;
+        bottom: -58px;
+    }
+
 }
 
 .quote__text{
     color: rgba(51, 51, 51, 0.9);
     font-family: 'Playfair Display', serif;
-    font-size: 26px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 38px;
+    line-height: 1.46;
     letter-spacing: 0.26px;
     margin-bottom: 25px;
+}
+
+@media (min-width: 992px) {
+    .quote__text{
+        font-size: 26px;
+    }
+
 }
 
 .quote__author{
@@ -119,25 +237,6 @@
     letter-spacing: 5.4px;
 }
 
-.header-social-wrapper {
-    width: 20px;
-    position: absolute;
-    right: -45px;
-    bottom: 0;
-}
 
-@media (max-width: 1440px) {
-    .header-social-wrapper {
-        right: 30px;
-        bottom: 30px;
-    }
 
-    .site-desc {
-        right: 30px;
-        top: 170px;
-    }
 
-    .site-desc__content {
-        color: #ffffff;
-    }
-}

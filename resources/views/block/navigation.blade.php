@@ -9,16 +9,16 @@
 
         </div>
 
+        <div class="site-desc">
+            <div class="site-desc__content">First&nbsp;Surfing&nbsp;Magazine</div>
+        </div>
+
         <ul class="navigation">
             <li class="navigation-item"><a class="navigation-link" href="#">Stories</a></li>
             <li class="navigation-item"><a class="navigation-link" href="#">Events</a></li>
             <li class="navigation-item"><a class="navigation-link" href="#">Places</a></li>
             <li class="navigation-item"><a class="navigation-link" href="#">Boards</a></li>
         </ul>
-
-        <div class="site-desc">
-            <div class="site-desc__content">First&nbsp;Surfing&nbsp;Magazine</div>
-        </div>
 
     </nav>
 

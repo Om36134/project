@@ -1,5 +1,30 @@
 <div class="slide-wrapper">
 
+    <div class="container relative">
+        <!--Social icons-->
+
+        <div class="header-social-wrapper">
+
+            <div class=" social social--header">
+
+                <a href="#" class="social__item">
+                    <img src="img/socials/social-tumblr.svg" alt="">
+                </a>
+
+                <a href="#" class="social__item">
+                    <img src="img/socials/social-twitter.svg" alt="">
+                </a>
+
+                <a href="#" class="social__item">
+                    <img src="img/socials/social-vimeo.svg" alt="">
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+
     <!-- Set up your HTML -->
     <div id="headerSlider" class="owl-carousel headerSlider" >
 
@@ -33,29 +58,7 @@
 
         </div>
 
-        <!--Social icons-->
-
-        <div class="header-social-wrapper">
-
-            <div class=" social social--vertical">
-
-                <a href="#" class="social__item">
-                    <img src="img/socials/social-tumblr.svg" alt="">
-                </a>
-
-                <a href="#" class="social__item">
-                    <img src="img/socials/social-twitter.svg" alt="">
-                </a>
-
-                <a href="#" class="social__item">
-                    <img src="img/socials/social-vimeo.svg" alt="">
-                </a>
-            </div>
-
-        </div>
-
     </div>
-
 
 </div>
 

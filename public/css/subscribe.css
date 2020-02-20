@@ -73,7 +73,7 @@
 }
 
 .subscribe__input:active, :focus {
-    border: 1px solid rgba(97, 97, 97, 0.15);
+    /*border: 1px solid rgba(97, 97, 97, 0.15);*/
     outline: none;
 }
 

@@ -5,11 +5,21 @@ $(document).ready(function () {
 
 
     shopSlider.owlCarousel({
-        items: 3,
+        // items: 3,
         loop: true,
         dots: false,
         margin: 2,
-        smartSpeed: 500
+        smartSpeed: 500,
+        responsive :{
+            // breakpoint from 0 up
+            0: {
+                items: 1,
+            },
+            // breakpoint from 1200 up
+           1200: {
+                items: 3,
+            }
+        }
     });
 
     $('#shopSliderLeft').click(function () {

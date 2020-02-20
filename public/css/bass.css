@@ -10,13 +10,29 @@ body {
     background-position: center;
     background-size: initial;
     font-family: sans-serif;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
-    width: 1224px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
+@media (min-width: 1254px){
+    .container {
+        width: 1224px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+
+    }}
 
 .flex-end {
     display: flex;
