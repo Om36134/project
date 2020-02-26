@@ -98,11 +98,11 @@
 
 {{--</section>--}}
 
-@include('block.shop')
+{{--@include('block.shop')--}}
 {{--@include('block.article-01')--}}
 {{--@include('block.article-02')--}}
 {{--@include('block.subscribe')--}}
-{{--@include('block.camp')--}}
+@include('block.camp')
 {{--@include('block.footer')--}}
 
 

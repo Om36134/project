@@ -16,7 +16,7 @@ $(document).ready(function () {
                 items: 1,
             },
             // breakpoint from 1200 up
-           1200: {
+           1224: {
                 items: 3,
             }
         }

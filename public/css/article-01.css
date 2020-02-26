@@ -6,53 +6,123 @@
 
 .article {
     display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    flex-direction: column-reverse;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .article {
+        flex-direction: row;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
 }
 
 .article--odd {
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+    .article--odd {
+        flex-direction: row-reverse;
+    }
+
+
 }
 
 .article__desc {
-    width: 387px;
-    flex: 0 0 387px;
-    padding-left: 22px;
-    padding-right: 53px;
-    padding-top: 80px;
+    width: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .article__desc {
+        padding-right: 15px;
+    }
+
+}
+
+@media (min-width: 1254px) {
+    .article__desc {
+        padding-left: 70px;
+        padding-right: 53px;
+        padding-top: 80px;
+        width: 387px;
+        /*flex: 0 0 387px;*/
+    }
+
 }
 
 .article--odd .article__desc {
-    width: 430px;
-    flex: 0 0 430px;
-    padding-left: 75px;
-    padding-right: 53px;
-    padding-top: 44px;
+    width: 100%;
 }
+
+@media (min-width: 768px) {
+    .article--odd .article__desc {
+        padding-left: 15px;
+    }
+}
+
+
+@media (min-width: 1254px) {
+    .article--odd .article__desc {
+        width: 430px;
+        flex: 0 0 430px;
+        padding-left: 75px;
+        padding-right: 53px;
+        /*padding-top: 44px;*/
+    }
+}
+
+
 
 .article__title {
     color: #333333;
     font-family: 'Playfair Display', serif;
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 700;
-    line-height: 66px;
+    line-height: 2;
     letter-spacing: 0.42px;
     position: relative;
-    margin-bottom: 45px;
+    margin-bottom: 15px;
+}
+
+
+@media (min-width: 1254px){
+
+    .article__title {
+        font-size: 42px;
+        margin-bottom: 45px;
+    }
+
 }
 
 .article__title:before {
     content: attr(data-number);
     color: #f9f9f9;
     font-family: 'League-Spartan-Regular', sans-serif;
-    font-size: 130px;
+    font-size: 70px;
     font-weight: 700;
     line-height: 66px;
     letter-spacing: 13px;
     position: absolute;
     left: 0;
-    top: -17px;
+    top: -5px;
     z-index: -1;
+
+}
+
+@media (min-width: 1254px){
+
+    .article__title:before {
+        font-size: 130px;
+        top: -17px;
+
+    }
 
 }
 
@@ -67,8 +137,9 @@
 
 }
 
+
 .article__text {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     color: #616161;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -77,24 +148,60 @@
     letter-spacing: 0.35px;
 }
 
-.article__preview {
-    width: 762px;
-    position: relative;
-    flex: 0 0 762px;
 
+@media (min-width: 1254px){
+    .article__text {
+        margin-bottom: 60px;
+
+    }
+
+}
+
+.article__preview {
+    width: 100%;
+    position: relative;
+    margin-bottom: 25px;
+
+}
+
+@media (min-width: 768px){
+    .article__preview {
+        width: 50%;
+        flex: 0 0 50%;
+
+    }
+}
+
+
+@media (min-width: 1254px){
+    .article__preview {
+        width: 762px;
+        flex: 0 0 762px;
+        margin-bottom: 0;
+
+    }
 }
 
 
 .article--odd .article__preview {
-    width: 490px;
-    position: relative;
-    flex: 0 0 490px; /*не увеличивать и не уменьшать*/
+    width: 100%;
+    /*flex: 0 0 100%;*/
+    /*position: relative;*/
+}
+
+@media (min-width: 1254px){
+    .article--odd .article__preview {
+        width: 490px;
+        /*position: relative;*/
+        flex: 0 0 490px; /*не увеличивать и не уменьшать*/
+    }
 }
 
 
+
 .article__preview-desc {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     position: absolute;
     right: -30px;
     top: 0;
@@ -102,12 +209,21 @@
 }
 
 .article--odd .article__preview-desc {
-    left: -30px;
-    right: auto;
+    left: 30px;
+    top: 30px;
+    right: auto;    
 }
 
+@media (min-width: 1254px) {
+    .article--odd .article__preview-desc {
+        left: -30px;
+        right: auto;
+    }
+}
+
+
 .article__preview-desc-content {
-    color: rgba(11, 12, 17, 0.2);
+    color: #fff;
     font-family: 'League-Spartan-Regular', sans-serif;
     font-size: 9px;
     font-weight: 700;
@@ -119,6 +235,12 @@
     left: 0;
     top: 0;
     transform-origin: left top;
+}
+
+@media (min-width: 1254px) {
+    .article__preview-desc-content {
+        color: rgba(11, 12, 17, 0.2);
+    }
 }
 
 @media (max-width:1440px){
