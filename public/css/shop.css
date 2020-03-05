@@ -85,12 +85,12 @@
 @media (min-width: 650px) {
     .shopSlider-left {
         transform: translate(100%, 0%);
-        left: 0px;
+        left: -70px;
     }
 
 
     .shopSlider-right {
-        right: 0px;
+        right: -70px;
         transform: translate(-100%, 0%);
     }
 }
